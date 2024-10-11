@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
+	import { CTA } from '$lib/components/ui/misc';
 </script>
 
 <div
@@ -10,14 +11,14 @@
 <section id="hero" class="mb-8 flex w-full flex-col gap-6">
 	<h1
 		id="hero-title"
-		class="animate-in slide-in-from-bottom-60 text-title mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] duration-700 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+		class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-700 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
 	>
 		Work tools built better!
 	</h1>
 
 	<div
 		id="hero-description"
-		class="animate-in slide-in-from-bottom-60 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600 duration-1000"
+		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600 duration-1000 animate-in slide-in-from-bottom-60"
 	>
 		<p>
 			<span class="font-medium text-black"> Business tools today are too complicated.</span> Too many
@@ -44,7 +45,7 @@
 
 <section
 	id="one-tool-one-job"
-	class="animate-in slide-in-from-bottom-60 text-title mb-8 flex w-full flex-col gap-6 duration-1000"
+	class="mb-8 flex w-full flex-col gap-6 text-title duration-1000 animate-in slide-in-from-bottom-60"
 >
 	<h2
 		id="one-tool-one-job-title"
@@ -73,7 +74,7 @@
 
 <section
 	id="open-to-all"
-	class="animate-in slide-in-from-bottom-60 mb-8 flex w-full flex-col gap-6 duration-1000"
+	class="mb-8 flex w-full flex-col gap-6 duration-1000 animate-in slide-in-from-bottom-60"
 >
 	<h2
 		id="open-to-all-title"
@@ -98,19 +99,5 @@
 		>
 	</div>
 
-	<section
-		id="open-to-all-cta"
-		class="animate-in slide-in-from-bottom-60 flex w-full flex-col gap-6 duration-1000"
-	>
-		<h2
-			id="open-to-all-cta-title"
-			class="w-full text-start text-4xl font-medium leading-tight tracking-tight text-gray-500"
-		>
-			Say goodbye to the <s>clutter</s>
-			<br />
-			<span class="text-black">And get things Dun.</span>
-		</h2>
-
-		<Button href="/waitlist" class="w-fit">Join waitlist</Button>
-	</section>
+	<CTA />
 </section>

@@ -2,7 +2,7 @@
 	href='/'
 	class='text-black dark:text-white'>
 	<svg
-		width='80'
+		width='70'
 		height='35'
 		viewBox='0 0 80 35'
 		fill='currentColor'

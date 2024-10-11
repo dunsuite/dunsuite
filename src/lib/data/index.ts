@@ -14,8 +14,8 @@ export interface MenuItem {
 // Menu items
 export const menuItems: MenuItem[] = [
 	{
-		label: 'About',
-		url: '/about'
+		label: 'Story',
+		url: '/story'
 	},
 	{
 		label: 'Blog',

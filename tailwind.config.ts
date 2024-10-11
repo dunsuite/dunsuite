@@ -16,6 +16,7 @@ const config: Config = {
 		},
 		extend: {
 			colors: {
+				title: '#30273B',
 				border: 'hsl(var(--border) / <alpha-value>)',
 				input: 'hsl(var(--input) / <alpha-value>)',
 				ring: 'hsl(var(--ring) / <alpha-value>)',
