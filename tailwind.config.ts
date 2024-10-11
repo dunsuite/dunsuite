@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss';
 import typography from '@tailwindcss/typography';
 import animate from 'tailwindcss-animate';
+import { fontFamily } from 'tailwindcss/defaultTheme';
 
 const config: Config = {
 	darkMode: ['class'],
@@ -13,6 +14,9 @@ const config: Config = {
 			screens: {
 				'2xl': '1400px'
 			}
+		},
+		fontFamily: {
+			InterVariable: ['InterVariable', 'sans-serif']
 		},
 		extend: {
 			colors: {
@@ -57,7 +61,7 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				InterVariable: ['InterVariable', 'sans-serif']
+				sans: [...fontFamily.sans]
 			}
 		}
 	},
