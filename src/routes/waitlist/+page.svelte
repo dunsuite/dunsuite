@@ -3,6 +3,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { enhance } from '$app/forms';
 
+	let isLoading = false;
 	export let data;
 </script>
 
@@ -35,7 +36,19 @@
 		class="flex w-full flex-col gap-3 duration-1000 animate-in slide-in-from-bottom-60"
 		action="?/join_waitlist"
 		method="post"
-		use:enhance
+		use:enhance={({ formElement }) => {
+			// Form submission start
+			isLoading = true;
+
+			return async ({ result }) => {
+				// Handle the result after form submission
+				if (result.status === 200) {
+					formElement.reset(); // reset form on success
+				}
+				// Stop loading regardless of result
+				isLoading = false;
+			};
+		}}
 	>
 		<Input
 			type="email"
@@ -45,6 +58,8 @@
 			required
 		/>
 
-		<Button type="submit">Join Waitlist</Button>
+		<Button type="submit" disabled={isLoading}>
+			{isLoading ? 'Joining...' : 'Join Waitlist'}
+		</Button>
 	</form>
 </section>
