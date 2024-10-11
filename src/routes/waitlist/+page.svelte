@@ -2,6 +2,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { Button } from '$lib/components/ui/button';
 	import { enhance } from '$app/forms';
+	import { toast } from 'svelte-sonner';
 
 	let isLoading = false;
 	export let data;
@@ -44,6 +45,9 @@
 				// Handle the result after form submission
 				if (result.status === 200) {
 					formElement.reset(); // reset form on success
+					toast.success('You have been added to the waitlist!');
+				} else {
+					toast.error('Something went wrong. Please try again.');
 				}
 				// Stop loading regardless of result
 				isLoading = false;
