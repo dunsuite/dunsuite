@@ -1,6 +1,8 @@
 <script lang="ts">
-	import { CTA } from '$lib/components/ui/misc';
+	import { CTA, SEO } from '$lib/components/ui/misc';
 </script>
+
+<SEO title="Story | Dun" />
 
 <div
 	class="animate-appear fixed left-0 top-0 -z-10 mb-6 h-44 w-full"
@@ -41,10 +43,9 @@
 			And here we are! <a
 				href="https://thisux.com"
 				target="_blank"
-				class="text-title hover:underline decoration-wavy underline-offset-4"
+				class="text-title decoration-wavy underline-offset-4 hover:underline"
 				>ThisUX – Design led product studio</a
-			> with big dreams, eager to make things simpler, better, and more enjoyable, one tool at a
-			time.
+			> with big dreams, eager to make things simpler, better, and more enjoyable, one tool at a time.
 		</p>
 		<p>
 			And the exciting part is, we can all do it together. We're developing these tools as

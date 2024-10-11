@@ -1,7 +1,9 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { CTA } from '$lib/components/ui/misc';
+	import { CTA, SEO } from '$lib/components/ui/misc';
 </script>
+
+<SEO />
 
 <div
 	class="animate-appear fixed left-0 top-0 -z-10 mb-6 h-44 w-full"

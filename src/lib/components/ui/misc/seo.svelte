@@ -2,8 +2,8 @@
 	import { SITE_TITLE, SITE_SUBTITLE, SITE_DESCRIPTION } from '$lib/data';
 
 	export let title: string = SITE_TITLE;
-	export let description: string = SITE_DESCRIPTION;
 	export let subtitle: string = SITE_SUBTITLE;
+	export let description: string = SITE_DESCRIPTION;
 </script>
 
 <svelte:head>

@@ -5,6 +5,7 @@
 	import { toast } from 'svelte-sonner';
 	import { instagram, youtube, facebook, x, github, linkedin } from '$lib/assets/socials';
 	import { clsx } from '$lib/utils/index.js';
+	import { SEO } from '$lib/components/ui/misc';
 
 	const socialLinks = [
 		{ name: 'X', url: 'https://x.com/dunsuite', icon: x },
@@ -18,6 +19,8 @@
 	let isLoading = false;
 	let showSocials = false;
 </script>
+
+<SEO title="Waitlist | Dun" />
 
 <div
 	class="animate-appear fixed left-0 top-0 -z-10 mb-6 h-44 w-full"
