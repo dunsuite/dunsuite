@@ -6,7 +6,7 @@
 
 <Toaster />
 <div
-	class="mx-auto my-2 flex h-screen w-full max-w-2xl flex-col items-center justify-start p-4 font-InterVariable antialiased"
+	class="font-sans mx-auto my-2 flex h-screen w-full max-w-2xl flex-col items-center justify-start p-4 antialiased"
 >
 	<Header />
 	<slot></slot>

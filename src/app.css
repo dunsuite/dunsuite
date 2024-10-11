@@ -78,7 +78,6 @@
 	}
 
 	body {
-		font-family: 'InterVariable', sans-serif;
 		@apply bg-background text-foreground antialiased;
 	}
 
