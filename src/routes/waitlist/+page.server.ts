@@ -14,35 +14,26 @@ export const actions: Actions = {
 			return fail(400, { email, missing: true });
 		}
 
-		try {
-			// Authenticate as admin
-			const authData = await locals.pb
-				.collection('_superusers')
-				.authWithPassword(env.POCKETBASE_ADMIN_EMAIL, env.POCKETBASE_ADMIN_PASSWORD);
-
-			// Check if admin authentication was successful
-			if (!authData) {
+		// Authenticate as admin
+		await locals.pb
+			.collection('_superusers')
+			.authWithPassword(env.POCKETBASE_ADMIN_EMAIL, env.POCKETBASE_ADMIN_PASSWORD)
+			.catch((err) => {
+				if (err.status === 429) {
+					console.log('Rate limit exceeded in admin auth');
+					throw error(429, 'Rate limit exceeded');
+				}
 				throw error(403, 'Authentication failed');
-			}
-
-			// Add user to waitlist after admin authentication
-			await locals.pb.collection('waitlist').create({
-				email
 			});
 
-			return {
-				status: 200,
-				body: { success: true }
-			};
-		} catch (error: any) {
-			console.error(error);
-			return {
-				status: 500,
-				body: { error: error.message }
-			};
-		} finally {
-			// Clear admin session after use
-			locals.pb.authStore.clear();
-		}
+		// Add user to waitlist after admin authentication
+		await locals.pb.collection('waitlist').create({
+			email
+		});
+
+		return {
+			status: 200,
+			body: { success: true }
+		};
 	}
 };

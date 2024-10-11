@@ -46,6 +46,8 @@
 				if (result.status === 200) {
 					formElement.reset(); // reset form on success
 					toast.success('You have been added to the waitlist!');
+				} else if (result.status === 429) {
+					toast.error('Rate limit exceeded. Please try again later.');
 				} else {
 					toast.error('Something went wrong. Please try again.');
 				}
