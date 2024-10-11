@@ -88,7 +88,7 @@
 		font-display: swap;
 		src:
 			local('InterVariable'),
-			url('src/lib/assets/fonts/inter/InterVariable.woff2') format('woff2');
+			url('$lib/assets/fonts/inter/InterVariable.woff2') format('woff2');
 	}
 	@font-face {
 		font-family: InterVariable;
