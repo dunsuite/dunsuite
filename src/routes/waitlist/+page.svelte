@@ -3,9 +3,20 @@
 	import { Button } from '$lib/components/ui/button';
 	import { enhance } from '$app/forms';
 	import { toast } from 'svelte-sonner';
+	import { instagram, youtube, facebook, x, github, linkedin } from '$lib/assets/socials';
+	import { clsx } from '$lib/utils/index.js';
+
+	const socialLinks = [
+		{ name: 'X', url: 'https://x.com/dunsuite', icon: x },
+		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram },
+		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
+		{ name: 'Facebook', url: 'https://www.facebook.com/dunsuite', icon: facebook },
+		{ name: 'GitHub', url: 'https://github.com/dunsuite', icon: github },
+		{ name: 'YouTube', url: 'https://www.youtube.com/@dunsuite', icon: youtube }
+	];
 
 	let isLoading = false;
-	export let data;
+	let showSocials = false;
 </script>
 
 <div
@@ -14,58 +25,93 @@
 ></div>
 
 <section id="waitlist" class="flex h-screen w-full flex-col gap-6">
-	<h1
-		id="waitlist-title"
-		class="text-title mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
-	>
-		Ready to simplify your workflow?
-	</h1>
-	<div
-		id="waitlist-description"
-		class="mt-5 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600 duration-700 animate-in slide-in-from-bottom-60"
-	>
-		<p>
-			We're working on a new tool that will help you get things done.
-			<span class="font-medium text-black"> We're hoping to launch this month. </span>
+	{#if !showSocials}
+		<h1
+			id="waitlist-title"
+			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+		>
+			Ready to simplify your workflow?
+		</h1>
+		<div
+			id="waitlist-description"
+			class="mt-5 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600 duration-700 animate-in slide-in-from-bottom-60"
+		>
+			<p>
+				We're working on a new tool that will help you get things done.
+				<span class="font-medium text-black"> We're hoping to launch this month. </span>
 
-			Get in early and be the first to experience what we’ve been working on.
-		</p>
-	</div>
+				Get in early and be the first to experience what we’ve been working on.
+			</p>
+		</div>
 
-	<form
-		id="waitlist-form"
-		class="flex w-full flex-col gap-3 duration-1000 animate-in slide-in-from-bottom-60"
-		action="?/join_waitlist"
-		method="post"
-		use:enhance={({ formElement }) => {
-			// Form submission start
-			isLoading = true;
+		<form
+			id="waitlist-form"
+			class="flex w-full flex-col gap-3 duration-1000 animate-in slide-in-from-bottom-60"
+			action="?/join_waitlist"
+			method="post"
+			use:enhance={({ formElement }) => {
+				// Form submission start
+				isLoading = true;
 
-			return async ({ result }) => {
-				// Handle the result after form submission
-				if (result.status === 200) {
-					formElement.reset(); // reset form on success
-					toast.success('You have been added to the waitlist!');
-				} else if (result.status === 429) {
-					toast.error('Rate limit exceeded. Please try again later.');
-				} else {
-					toast.error('Something went wrong. Please try again.');
-				}
-				// Stop loading regardless of result
-				isLoading = false;
-			};
-		}}
-	>
-		<Input
-			type="email"
-			placeholder="Your email"
-			name="email"
-			class="rounded-xl border border-gray-300 bg-white p-5"
-			required
-		/>
+				return async ({ result }) => {
+					// Handle the result after form submission
+					if (result.status === 200) {
+						formElement.reset(); // reset form on success
+						isLoading = false;
+						showSocials = true;
+						toast.success('You have been added to the waitlist!');
+					} else if (result.status === 429) {
+						isLoading = false;
+						toast.error('Rate limit exceeded. Please try again later.');
+					} else {
+						isLoading = false;
+						toast.error('Something went wrong. Please try again.');
+					}
+				};
+			}}
+		>
+			<Input
+				type="email"
+				placeholder="Your email"
+				name="email"
+				class="rounded-xl border border-gray-300 bg-white p-5"
+				required
+			/>
 
-		<Button type="submit" disabled={isLoading}>
-			{isLoading ? 'Joining...' : 'Join Waitlist'}
-		</Button>
-	</form>
+			<Button type="submit" disabled={isLoading}>
+				{isLoading ? 'Joining...' : 'Join Waitlist'}
+			</Button>
+		</form>
+	{:else}
+		<h1
+			id="follow-us-title"
+			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+		>
+			Follow us for more updates!
+		</h1>
+
+		<ul class="flex flex-wrap gap-3">
+			{#each socialLinks as link}
+				<li>
+					<a
+						href={link.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group flex size-24 items-center justify-center rounded-2xl bg-white p-8 duration-700 animate-in slide-in-from-bottom-60"
+					>
+						<img
+							src={link.icon}
+							alt={link.name}
+							class={clsx(
+								'size-8',
+								'transition-opacity duration-700',
+								'transition-transform duration-700',
+								'group-hover:scale-110'
+							)}
+						/>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	{/if}
 </section>
