@@ -19,3 +19,13 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# PocketBase data (optional)
+# pb_data/
+# pb_migrations/
+
+# PocketBase data
+pocketbase/pocketbase
+pb_data/         
+# Include only migrations
+!/pb_migrations/  
