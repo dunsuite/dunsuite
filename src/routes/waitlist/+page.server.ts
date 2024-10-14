@@ -22,10 +22,12 @@ export const actions: Actions = {
 				throw error(403, 'Authentication failed');
 			});
 
+		console.log('authData', authData);
+
 		if (authData.token) {
 			// Add user to waitlist after admin authentication
 			await locals.pb.collection('waitlist').create({
-				email
+				email: email
 			});
 
 			return {
