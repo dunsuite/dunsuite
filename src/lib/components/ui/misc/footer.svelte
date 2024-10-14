@@ -1,5 +1,5 @@
 <footer
-	class="mb-3 flex w-full flex-row items-start justify-between gap-2 py-12 text-sm font-medium text-gray-500 duration-1000 animate-in slide-in-from-bottom-8"
+	class="mb-3 flex w-full flex-row items-start justify-between gap-2 py-12 text-sm font-medium text-gray-500 duration-1000 animate-in slide-in-from-bottom-3"
 >
 	<div>
 		Designed, built & run by
