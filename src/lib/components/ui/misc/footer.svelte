@@ -1,7 +1,15 @@
-<footer class="flex w-full flex-row items-start justify-between gap-2 text-sm text-gray-500 font-medium mb-3 py-12">
+<footer
+	class="animate-fade-in-up mb-3 flex w-full flex-row items-start justify-between gap-2 py-12 text-sm font-medium text-gray-500 duration-1000"
+>
 	<div>
 		Designed, built & run by
-		<a href="https://thisux.com" class="hover:underline decoration-wavy underline-offset-2 text-title" target="_blank"> ThisUX - Design Led Product Studio</a>
+		<a
+			href="https://thisux.com"
+			class="text-title decoration-wavy underline-offset-2 hover:underline"
+			target="_blank"
+		>
+			ThisUX - Design Led Product Studio</a
+		>
 	</div>
 
 	<p>&copy; 2024</p>
