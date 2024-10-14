@@ -3,7 +3,7 @@
 	import { CTA, SEO } from '$lib/components/ui/misc';
 </script>
 
-<SEO title="Dun | The Simple, Open-Source Business Tool Suite" />
+<SEO title="Dun – The Simple, Open-Source Business Tool Suite" />
 
 <section id="hero" class="mb-8 flex w-full flex-col gap-6">
 	<h1
