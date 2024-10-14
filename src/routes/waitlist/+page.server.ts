@@ -1,5 +1,7 @@
 import { error, fail, type Actions } from '@sveltejs/kit';
 import { env } from '$env/dynamic/private';
+import { waitlistRatelimit } from '$lib/server/ratelimiter';
+import { requestIp } from '../../hooks.server';
 
 export const load = async () => {
 	return {};
@@ -7,6 +9,15 @@ export const load = async () => {
 
 export const actions: Actions = {
 	join_waitlist: async ({ request, locals }) => {
+		const userIP: string = request.headers.get('CF-Connecting-IP') || requestIp;
+
+		const data = await waitlistRatelimit.limit(userIP); // Apply rate limiting
+
+		if (!data.success) {
+			// Check if rate limit is exceeded
+			return error(429, 'Your request rate is higher than allowed. Please try again later.');
+		}
+
 		const formData = await request.formData();
 		const email = formData.get('email') as string;
 
