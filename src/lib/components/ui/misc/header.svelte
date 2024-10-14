@@ -7,6 +7,10 @@
 
 	onMount(() => {
 		document.addEventListener('keydown', (e) => {
+			// Check if the focused element is an input field
+			if (document.activeElement?.tagName === 'INPUT') {
+				return; // Do not navigate if typing in an input
+			}
 			if (e.key === 'j') {
 				window.location.href = '/waitlist';
 			}

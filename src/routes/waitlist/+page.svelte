@@ -87,7 +87,7 @@
 
 				{#if !isLoading}
 					<span
-						class="hidden sm:block ml-2 rounded-md border border-gray-700 bg-gray-800 px-1 py-0.5 text-xs text-gray-500 group-hover:border-gray-500 group-hover:text-gray-300 group-hover:bg-gray-700 transition-all duration-150"
+						class="ml-2 hidden rounded-md border border-gray-700 bg-gray-800 px-1 py-0.5 text-xs text-gray-500 transition-all duration-150 group-hover:border-gray-500 group-hover:bg-gray-700 group-hover:text-gray-300 sm:block"
 					>
 						↵
 					</span>
@@ -99,7 +99,7 @@
 			id="follow-us-title"
 			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
 		>
-			You’re on the list! Stay tuned for updates—follow us for behind-the-scenes content!
+			You’re on the list! follow us for updates
 		</h1>
 
 		<ul class="flex flex-wrap gap-3">
