@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import { Header, Gradient } from '$lib/components/ui/misc';
+	import { Header, Gradient, Footer } from '$lib/components/ui/misc';
 	import { Toaster } from '$lib/components/ui/sonner';
 </script>
 
@@ -11,4 +11,5 @@
 	<Gradient />
 	<Header />
 	<slot></slot>
+	<Footer />
 </div>

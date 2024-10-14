@@ -4,3 +4,4 @@ export { default as Logo } from './logo.svelte';
 export { default as SEO } from './seo.svelte';
 export { default as CTA } from './cta.svelte';
 export { default as Gradient } from './gradient.svelte';
+export { default as Footer } from './footer.svelte';
