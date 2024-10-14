@@ -15,7 +15,6 @@ export const actions: Actions = {
 		}
 
 		// Authenticate as admin
-
 		const authData = await locals.pb.admins
 			.authWithPassword(env.POCKETBASE_ADMIN_EMAIL, env.POCKETBASE_ADMIN_PASSWORD)
 			.catch((err) => {
@@ -23,18 +22,18 @@ export const actions: Actions = {
 				throw error(403, 'Authentication failed');
 			});
 
-		if (!authData.record) {
+		if (authData.token) {
+			// Add user to waitlist after admin authentication
+			await locals.pb.collection('waitlist').create({
+				email
+			});
+
+			return {
+				status: 200,
+				body: { success: true }
+			};
+		} else {
 			throw error(403, 'Authentication failed');
 		}
-
-		// Add user to waitlist after admin authentication
-		await locals.pb.collection('waitlist').create({
-			email
-		});
-
-		return {
-			status: 200,
-			body: { success: true }
-		};
 	}
 };
