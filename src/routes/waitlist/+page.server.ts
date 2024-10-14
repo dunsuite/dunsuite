@@ -19,10 +19,7 @@ export const actions: Actions = {
 			.collection('users')
 			.authWithPassword(env.POCKETBASE_ADMIN_EMAIL, env.POCKETBASE_ADMIN_PASSWORD)
 			.catch((err) => {
-				if (err.status === 429) {
-					console.log('Rate limit exceeded in admin auth');
-					throw error(429, 'Rate limit exceeded');
-				}
+				console.log(err);
 				throw error(403, 'Authentication failed');
 			});
 
