@@ -6,7 +6,7 @@
 
 <Toaster />
 <div
-	class="mx-auto my-2 flex h-screen w-full max-w-2xl flex-col items-center justify-start p-4 font-sans antialiased"
+	class="mx-auto my-2 flex min-h-screen w-full max-w-2xl flex-col items-center justify-start p-4 font-sans antialiased"
 >
 	<Gradient />
 	<Header />

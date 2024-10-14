@@ -9,10 +9,10 @@
 
 	const socialLinks = [
 		{ name: 'X', url: 'https://x.com/dunsuite', icon: x },
-		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram },
-		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
-		{ name: 'Facebook', url: 'https://www.facebook.com/dunsuite', icon: facebook },
 		{ name: 'GitHub', url: 'https://github.com/dunsuite', icon: github },
+		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
+		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram },
+		{ name: 'Facebook', url: 'https://www.facebook.com/dunsuite', icon: facebook },
 		{ name: 'YouTube', url: 'https://www.youtube.com/@dunsuite', icon: youtube }
 	];
 

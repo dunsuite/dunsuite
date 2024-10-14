@@ -4,7 +4,7 @@
 
 <SEO title="Story | Dun" />
 
-<section id="story" class="flex h-screen w-full flex-col gap-6">
+<section id="story" class="flex min-h-screen w-full flex-col gap-6">
 	<h1
 		id="story-title"
 		class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
