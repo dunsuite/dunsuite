@@ -3,16 +3,16 @@
 	import { Button } from '$lib/components/ui/button';
 	import { enhance } from '$app/forms';
 	import { toast } from 'svelte-sonner';
-	import { instagram, youtube, facebook, x, github, linkedin } from '$lib/assets/socials';
+	import { instagram, youtube, discord, x, github, linkedin } from '$lib/assets/socials';
 	import { clsx } from '$lib/utils/index.js';
 	import { SEO } from '$lib/components/ui/misc';
 
 	const socialLinks = [
 		{ name: 'X', url: 'https://x.com/dunsuite', icon: x },
 		{ name: 'GitHub', url: 'https://github.com/dunsuite', icon: github },
+		{ name: 'Discord', url: 'https://discord.gg/BT4zuUrM', icon: discord },
 		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
 		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram },
-		{ name: 'Facebook', url: 'https://www.facebook.com/dunsuite', icon: facebook },
 		{ name: 'YouTube', url: 'https://www.youtube.com/@dunsuite', icon: youtube }
 	];
 

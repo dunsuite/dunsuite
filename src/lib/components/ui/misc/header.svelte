@@ -8,7 +8,7 @@
 <div
 	class={clsx(
 		'sticky top-2 z-10 flex w-full flex-row items-center justify-between gap-3 rounded-[16px] p-1.5',
-		'bg-white text-black duration-500 animate-in slide-in-from-top-5'
+		'bg-white text-black duration-500 animate-in slide-in-from-top-5 opacity-50'
 	)}
 >
 	<Logo />
