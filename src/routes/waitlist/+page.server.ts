@@ -15,17 +15,13 @@ export const actions: Actions = {
 		}
 
 		// Authenticate as admin
-		const authData = await locals.pb
+		await locals.pb
 			.collection('users')
 			.authWithPassword(env.POCKETBASE_ADMIN_EMAIL, env.POCKETBASE_ADMIN_PASSWORD)
 			.catch((err) => {
 				console.log(err);
 				throw error(403, 'Authentication failed');
 			});
-
-		if (!authData.record) {
-			throw error(403, 'Authentication failed');
-		}
 
 		console.log(locals.pb.authStore.isValid);
 		console.log(locals.pb.authStore.token);
