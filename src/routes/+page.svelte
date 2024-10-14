@@ -1,6 +1,23 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { CTA, SEO } from '$lib/components/ui/misc';
+	import { CTA, SEO, Kbd } from '$lib/components/ui/misc';
+	import { onMount } from 'svelte';
+	import { toast } from 'svelte-sonner';
+
+	onMount(() => {
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'g') {
+				window.location.href = 'https://github.com/dunsuite';
+			} else if (e.key === 'j') {
+				window.location.href = '/waitlist';
+			} else if (e.key === 'h') {
+				window.location.href = '/';
+				toast.success('You pressed H!... Redirecting you to the homepage.', {
+					duration: 5000
+				});
+			}
+		});
+	});
 </script>
 
 <SEO title="Dun – The Simple, Open-Source Business Tool Suite" />
@@ -60,7 +77,7 @@
 			exceptionally well.
 		</p>
 
-		<p class="text-black">Open app --> finish the task --> get back to your life!, that's it!</p>
+		<p class="text-title">Open app --> finish the task --> get back to your life!, that's it!</p>
 
 		<p>
 			Designed with simplicity and a better UX in mind. No context switching, distractions or
@@ -91,9 +108,10 @@
 
 		<p>You can tweak, improve, and contribute, making the tools truly yours.</p>
 
-		<Button href="https://github.com/dunsuite" type="href" variant="default" class="w-fit"
-			>View on GitHub</Button
-		>
+		<Button href="https://github.com/dunsuite" class="w-fit"
+			>View on GitHub
+			<Kbd key="G" />
+		</Button>
 	</div>
 
 	<CTA />

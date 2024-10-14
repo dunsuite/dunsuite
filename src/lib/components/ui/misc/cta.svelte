@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
+	import { Kbd } from '$lib/components/ui/misc';
 </script>
 
 <section
@@ -15,5 +16,8 @@
 		<span class="text-black">And get things Dun.</span>
 	</h2>
 
-	<Button href="/waitlist" class="w-fit">Join waitlist</Button>
+	<Button href="/waitlist" class="w-fit"
+		>Join waitlist
+		<Kbd key="J" />
+	</Button>
 </section>

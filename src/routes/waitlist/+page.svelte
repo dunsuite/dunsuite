@@ -82,8 +82,16 @@
 				required
 			/>
 
-			<Button type="submit" disabled={isLoading}>
+			<Button type="submit" disabled={isLoading} class="group">
 				{isLoading ? 'Joining...' : 'Join Waitlist'}
+
+				{#if !isLoading}
+					<span
+						class="hidden sm:block ml-2 rounded-md border border-gray-700 bg-gray-800 px-1 py-0.5 text-xs text-gray-500 group-hover:border-gray-500 group-hover:text-gray-300 group-hover:bg-gray-700 transition-all duration-150"
+					>
+						↵
+					</span>
+				{/if}
 			</Button>
 		</form>
 	{:else}

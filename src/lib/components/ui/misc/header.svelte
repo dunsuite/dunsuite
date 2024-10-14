@@ -2,13 +2,22 @@
 	import { menuItems } from '$lib/data';
 	import { Button } from '$lib/components/ui/button';
 	import { clsx } from '$lib/utils/index';
-	import { HeaderLink, Logo } from '$lib/components/ui/misc';
+	import { HeaderLink, Logo, Kbd } from '$lib/components/ui/misc';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'j') {
+				window.location.href = '/waitlist';
+			}
+		});
+	});
 </script>
 
 <div
 	class={clsx(
 		'sticky top-2 z-10 flex w-full flex-row items-center justify-between gap-3 rounded-[16px] p-1.5',
-		'bg-white/70 text-black duration-500 animate-in slide-in-from-top-5 backdrop-blur-md'
+		'bg-white/70 text-black backdrop-blur-md duration-500 animate-in slide-in-from-top-5'
 	)}
 >
 	<Logo />
@@ -19,5 +28,8 @@
 		{/each}
 	</div>
 
-	<Button href="/waitlist">Join waitlist</Button>
+	<Button href="/waitlist" class="group">
+		Join waitlist
+		<Kbd key="J" />
+	</Button>
 </div>
