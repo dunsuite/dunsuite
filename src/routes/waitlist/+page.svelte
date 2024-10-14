@@ -91,7 +91,7 @@
 			id="follow-us-title"
 			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
 		>
-			Follow us for more updates!
+			You’re on the list! Stay tuned for updates—follow us for behind-the-scenes content!
 		</h1>
 
 		<ul class="flex flex-wrap gap-3">
