@@ -30,6 +30,8 @@ export const actions: Actions = {
 				email: email
 			});
 
+			locals.pb.authStore.clear();
+
 			return {
 				status: 200,
 				body: { success: true }
