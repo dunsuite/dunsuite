@@ -22,6 +22,7 @@ export const actions: Actions = {
 				throw error(403, 'Authentication failed');
 			});
 
+		// Check if admin is authenticated
 		if (!authData.token) {
 			throw error(403, 'Authentication failed');
 		}
@@ -32,10 +33,12 @@ export const actions: Actions = {
 			throw error(400, 'User already in waitlist');
 		}
 
+		// create user in waitlist
 		await locals.pb.collection('waitlist').create({
 			email: email
 		});
 
+		// clear auth
 		locals.pb.authStore.clear();
 
 		return {
