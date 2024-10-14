@@ -26,6 +26,12 @@ export const actions: Actions = {
 			throw error(403, 'Authentication failed');
 		}
 
+		// check if user is already in waitlist
+		const user = await locals.pb.collection('waitlist').getFirstListItem(`email="${email}"`);
+		if (user) {
+			throw error(400, 'User already in waitlist');
+		}
+
 		await locals.pb.collection('waitlist').create({
 			email: email
 		});

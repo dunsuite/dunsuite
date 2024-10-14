@@ -61,6 +61,9 @@
 					} else if (result.status === 429) {
 						isLoading = false;
 						toast.error('Rate limit exceeded. Please try again later.');
+					} else if (result.status === 400) {
+						isLoading = false;
+						toast.error('You are already in the waitlist.');
 					} else {
 						isLoading = false;
 						toast.error('Something went wrong. Please try again.');
