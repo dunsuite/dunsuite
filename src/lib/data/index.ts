@@ -18,10 +18,6 @@ export const menuItems: MenuItem[] = [
 		url: '/story'
 	},
 	{
-		label: 'Blog',
-		url: '/blog'
-	},
-	{
 		label: 'GitHub',
 		url: 'https://github.com/dunsuite'
 	}
