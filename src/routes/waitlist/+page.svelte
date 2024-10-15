@@ -3,7 +3,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { enhance } from '$app/forms';
 	import { toast } from 'svelte-sonner';
-	import { instagram, youtube, discord, x, github, linkedin } from '$lib/assets/socials';
+	import { instagram, discord, x, github, linkedin } from '$lib/assets/socials';
 	import { clsx } from '$lib/utils/index.js';
 	import { SEO } from '$lib/components/ui/misc';
 
@@ -12,8 +12,7 @@
 		{ name: 'GitHub', url: 'https://github.com/dunsuite', icon: github },
 		{ name: 'Discord', url: 'https://discord.gg/BT4zuUrM', icon: discord },
 		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
-		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram },
-		{ name: 'YouTube', url: 'https://www.youtube.com/@dunsuite', icon: youtube }
+		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram }
 	];
 
 	let isLoading = false;
@@ -82,7 +81,13 @@
 				required
 			/>
 
-			<Button type="submit" disabled={isLoading} class="group">
+			<Button
+				id="waitlist-button"
+				type="submit"
+				disabled={isLoading}
+				class="group"
+				data-umami-event="Waitlist – Join Waitlist"
+			>
 				{isLoading ? 'Joining...' : 'Join Waitlist'}
 
 				{#if !isLoading}
@@ -106,10 +111,12 @@
 			{#each socialLinks as link}
 				<li>
 					<a
+						id="waitlist-social-link"
 						href={link.url}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="group flex size-24 items-center justify-center rounded-2xl bg-white p-8 duration-700 animate-in slide-in-from-bottom-60"
+						data-umami-event={`Waitlist – ${link.name}`}
 					>
 						<img
 							src={link.icon}

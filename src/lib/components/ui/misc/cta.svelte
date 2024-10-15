@@ -16,8 +16,13 @@
 		<span class="text-black">And get things Dun.</span>
 	</h2>
 
-	<Button href="/waitlist" class="w-fit"
-		>Join waitlist
+	<Button
+		id="open-to-all-cta-button"
+		href="/waitlist"
+		class="w-fit"
+		data-umami-event="Open to All – CTA Button"
+	>
+		Join waitlist
 		<Kbd key="J" />
 	</Button>
 </section>

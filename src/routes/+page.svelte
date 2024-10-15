@@ -108,8 +108,13 @@
 
 		<p>You can tweak, improve, and contribute, making the tools truly yours.</p>
 
-		<Button href="https://github.com/dunsuite" class="w-fit"
-			>View on GitHub
+		<Button
+			id="open-to-all-github-button"
+			href="https://github.com/dunsuite"
+			class="w-fit"
+			data-umami-event="Open to All – GitHub Button"
+		>
+			View on GitHub
 			<Kbd key="G" />
 		</Button>
 	</div>

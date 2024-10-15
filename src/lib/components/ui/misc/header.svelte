@@ -32,7 +32,12 @@
 		{/each}
 	</div>
 
-	<Button href="/waitlist" class="group">
+	<Button
+		id="waitlist-button"
+		href="/waitlist"
+		class="group"
+		data-umami-event="Header – Join Waitlist"
+	>
 		Join waitlist
 		<Kbd key="J" />
 	</Button>
