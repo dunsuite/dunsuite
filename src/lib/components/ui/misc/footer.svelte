@@ -1,7 +1,7 @@
 <footer
-	class="mb-3 flex w-full flex-row items-start justify-between gap-2 py-12 text-sm font-medium text-gray-500 duration-1000 animate-in slide-in-from-bottom-3"
+	class="mb-3 flex w-full flex-col items-start justify-center gap-4 py-12 text-sm font-medium text-gray-500 duration-1000 animate-in slide-in-from-bottom-3 sm:flex-row sm:items-start sm:justify-between sm:gap-2"
 >
-	<div>
+	<div id="footer-link-thisux">
 		Designed, built & run by
 		<a
 			id="footer-link-thisux"
@@ -14,5 +14,5 @@
 		>
 	</div>
 
-	<p>&copy; 2024</p>
+	<p id="footer-copyright">&copy; 2024</p>
 </footer>
