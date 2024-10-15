@@ -25,6 +25,7 @@ const sitemap = (pages: string[]) => `<?xml version="1.0" encoding="UTF-8" ?>
     <loc>${site}/${page}</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
+    <lastmod>${new Date().toISOString()}</lastmod>
   </url>
   `
 		)
