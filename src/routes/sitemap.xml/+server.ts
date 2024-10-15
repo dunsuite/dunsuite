@@ -1,5 +1,5 @@
-const site = 'https://dunsuite.so'; // change this to reflect your domain
-const pages: string[] = ['/', '/waitlist']; // populate this with all the slugs you wish to include
+const site = 'https://dunsuite.com';
+const pages: string[] = ['/', '/waitlist'];
 
 export async function GET() {
 	const body = sitemap(pages);
