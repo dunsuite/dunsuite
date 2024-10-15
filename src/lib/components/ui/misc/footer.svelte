@@ -4,8 +4,10 @@
 	<div>
 		Designed, built & run by
 		<a
+			id="footer-link-thisux"
 			href="https://thisux.com"
 			class="text-title decoration-wavy underline-offset-2 hover:underline"
+			data-umami-event="Footer – ThisUX"
 			target="_blank"
 		>
 			ThisUX - Design Led Product Studio</a
