@@ -1,5 +1,4 @@
 <script lang="ts">
-	script lang="ts">
 	import { clsx } from '$lib/utils/index';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
