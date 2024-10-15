@@ -18,7 +18,7 @@
 	});
 </script>
 
-<div
+<header
 	class={clsx(
 		'sticky top-2 z-10 flex w-full flex-row items-center justify-between gap-3 rounded-[16px] p-1.5',
 		'bg-white/70 text-black backdrop-blur-md duration-500 animate-in slide-in-from-top-5'
@@ -26,11 +26,15 @@
 >
 	<Logo />
 
-	<div class="flex flex-row items-center justify-center gap-3 font-medium sm:gap-6">
-		{#each menuItems as item}
-			<HeaderLink href={item.url}>{item.label}</HeaderLink>
-		{/each}
-	</div>
+	<nav class="flex flex-row items-center justify-center gap-3 font-medium sm:gap-6">
+		<ul class="flex flex-row items-center justify-center gap-3 font-medium sm:gap-6">
+			{#each menuItems as item}
+				<li>
+					<HeaderLink href={item.url}>{item.label}</HeaderLink>
+				</li>
+			{/each}
+		</ul>
+	</nav>
 
 	<Button
 		id="waitlist-button"
@@ -41,4 +45,4 @@
 		Join waitlist
 		<Kbd key="J" />
 	</Button>
-</div>
+</header>
