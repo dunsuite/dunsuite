@@ -24,6 +24,7 @@
 </script>
 
 <a
+	id={`header-link-${href}`}
 	{href}
 	class={clsx(
 		'hover:text-black dark:hover:text-white',
@@ -32,6 +33,7 @@
 			? 'font-medium text-black dark:text-white'
 			: 'font-medium text-gray-400 dark:text-gray-300'
 	)}
+	data-umami-event={`Header – ${href}`}
 	{...props}
 >
 	<slot />
