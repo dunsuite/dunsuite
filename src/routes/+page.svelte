@@ -7,13 +7,13 @@
 	onMount(() => {
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'g') {
-				window.location.href = 'https://github.com/dunsuite';
+				window.open('https://github.com/dunsuite', '_blank');
 			} else if (e.key === 'j') {
 				window.location.href = '/waitlist';
 			} else if (e.key === 'h') {
 				window.location.href = '/';
 				toast.success('You pressed H!... Redirecting you to the homepage.', {
-					duration: 5000
+					duration: 3000
 				});
 			}
 		});
