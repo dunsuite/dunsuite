@@ -25,6 +25,7 @@
 
 <a
 	{href}
+	target={href.includes('https') ? '_blank' : '_self'}
 	class={clsx(
 		'hover:text-black dark:hover:text-white',
 		'transition-all duration-100 ease-in-out hover:cursor-pointer hover:font-medium',
