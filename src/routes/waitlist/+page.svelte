@@ -15,8 +15,16 @@
 		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram }
 	];
 
+	let email = '';
 	let isLoading = false;
 	let showSocials = false;
+
+	function handleKeyPress(event: KeyboardEvent) {
+		if (event.key === 'Enter' && !email) {
+			event.preventDefault();
+			toast.error('Please enter your email.');
+		}
+	}
 </script>
 
 <SEO title="Waitlist | Dun" />
@@ -78,7 +86,9 @@
 				placeholder="Your email"
 				name="email"
 				class="rounded-xl border border-gray-300 bg-white p-5"
+				bind:value={email}
 				required
+				on:keypress={handleKeyPress}
 			/>
 
 			<Button

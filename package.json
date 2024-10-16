@@ -1,7 +1,24 @@
 {
 	"name": "dunsuite.com",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": true,
+	"author": "Dun <hello@dunsuite.com>",
+	"license": "AGPL-3.0",
+	"description": "The official website for Dunsuite.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dunsuite/dunsuite.git"
+	},
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"typescript",
+		"tailwindcss",
+		"dun",
+		"dun-suite",
+		"website",
+		"blog"
+	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -27,7 +44,6 @@
 		"@tailwindcss/typography": "^0.5.15",
 		"pocketbase-typegen": "^1.2.1",
 		"@types/eslint": "^9.6.1",
-		
 		"autoprefixer": "^10.4.20",
 		"eslint": "^9.12.0",
 		"eslint-config-prettier": "^9.1.0",
