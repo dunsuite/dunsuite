@@ -3,6 +3,4 @@ Allow: /
 
 Sitemap: https://dunsuite.com/sitemap.xml
 
-# Host directive
 Host: dunsuite.com
-    
