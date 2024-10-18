@@ -67,7 +67,7 @@
 	<img
 		src={Home}
 		alt="DunTasks – Home"
-		class="-mx-5 -my-2 aspect-auto w-full duration-500 animate-in slide-in-from-bottom-60"
+		class="m-0 aspect-auto w-full duration-500 animate-in slide-in-from-bottom-60 sm:-mx-5 sm:-my-2"
 	/>
 
 	<div
@@ -89,7 +89,7 @@
 
 <section
 	id="duntasks-how-it-works"
-	class="duration-1200 mb-12 flex w-full flex-col gap-6 animate-in slide-in-from-bottom-60"
+	class="mb-12 flex w-full flex-col gap-6 duration-1200 animate-in slide-in-from-bottom-60"
 >
 	<h2 id="duntasks-how-it-works-title" class="text-2xl font-medium text-title">
 		With DunTasks, All you gotta do is,
@@ -102,32 +102,32 @@
 			<Tabs.Trigger value="how-it-works-track-task">Track it</Tabs.Trigger>
 			<Tabs.Trigger value="how-it-works-get-it-done">Get done</Tabs.Trigger>
 		</Tabs.List>
-		<Tabs.Content value="how-it-works-create-project" class="-mx-5 -my-2">
+		<Tabs.Content value="how-it-works-create-project" class="m-0 sm:-mx-5 sm:-my-2">
 			<img
 				src={CreateProject}
 				alt="DunTasks – Create project"
-				class="duration-600 aspect-auto w-full animate-in slide-in-from-bottom-60"
+				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-add-task" class="-mx-5 -my-2">
+		<Tabs.Content value="how-it-works-add-task" class="sm:-mx-5 sm:-my-2 m-0">
 			<img
 				src={AddTask}
 				alt="DunTasks – Add task"
-				class="duration-600 aspect-auto w-full animate-in slide-in-from-bottom-60"
+				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-track-task" class="-mx-5 -my-2">
+		<Tabs.Content value="how-it-works-track-task" class="sm:-mx-5 sm:-my-2 m-0">
 			<img
 				src={TrackIt}
 				alt="DunTasks – Track task"
-				class="duration-600 aspect-auto w-full animate-in slide-in-from-bottom-60"
+				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-get-it-done" class="-mx-5 -my-2">
+		<Tabs.Content value="how-it-works-get-it-done" class="sm:-mx-5 sm:-my-2 m-0">
 			<img
 				src={GetItDone}
 				alt="DunTasks – Get it done"
-				class="duration-600 aspect-auto w-full animate-in slide-in-from-bottom-60"
+				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
 	</Tabs.Root>
@@ -135,14 +135,14 @@
 
 <section
 	id="duntasks-keyboard-friendly"
-	class="duration-1400 mb-12 flex w-full flex-col gap-6 animate-in slide-in-from-bottom-60"
+	class="mb-12 flex w-full flex-col gap-6 duration-1400 animate-in slide-in-from-bottom-60"
 >
 	<h2 id="duntasks-keyboard-friendly-title" class="text-2xl font-medium text-title">
 		Keyboard friendly
 	</h2>
 
 	<div
-		class="duration-800 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500 animate-in slide-in-from-bottom-60"
+		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500 duration-800 animate-in slide-in-from-bottom-60"
 	>
 		<p>
 			You don’t have to waste time dragging your cursor across the screen just to create projects,
@@ -159,14 +159,14 @@
 		<img
 			src={KeyboardFriendly}
 			alt="DunTasks – Keyboard friendly"
-			class="-mx-5 -my-2 aspect-auto w-full duration-700 animate-in slide-in-from-bottom-60"
+			class="m-0 sm:-mx-5 sm:-my-2 aspect-auto w-full duration-700 animate-in slide-in-from-bottom-60"
 		/>
 	</div>
 </section>
 
 <section
 	id="duntasks-built-with-community"
-	class="duration-1600 mb-12 flex w-full flex-col gap-6 animate-in slide-in-from-bottom-60"
+	class="mb-12 flex w-full flex-col gap-6 duration-1600 animate-in slide-in-from-bottom-60"
 >
 	<h2 id="duntasks-built-with-community-title" class="text-2xl font-medium text-title">
 		Built with community support
