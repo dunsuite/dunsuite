@@ -10,7 +10,7 @@
 	} from '$lib/assets/tools/duntasks';
 	import { Button } from '$lib/components/ui/button';
 	import * as Tabs from '$lib/components/ui/tabs';
-	import { CTA, SEO, Kbd } from '$lib/components/ui/misc';
+	import { CTA, SEO, Kbd, DunTasksLogo } from '$lib/components/ui/misc';
 </script>
 
 <SEO title="DunTasks | Get Tasks Dun, Quicker" />
@@ -20,11 +20,7 @@
 	class="mb-12 flex w-full flex-col gap-6 duration-500 animate-in slide-in-from-bottom-60"
 >
 	<div class="mb-3 flex flex-col items-start justify-start gap-3">
-		<img
-			src={Logo}
-			alt="DunTasks Logo"
-			class="-m-5 mt-3 size-44 duration-200 animate-in slide-in-from-bottom-60"
-		/>
+		<DunTasksLogo />
 
 		<h1
 			id="duntasks-hero-title"
@@ -109,21 +105,21 @@
 				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-add-task" class="sm:-mx-5 sm:-my-2 m-0">
+		<Tabs.Content value="how-it-works-add-task" class="m-0 sm:-mx-5 sm:-my-2">
 			<img
 				src={AddTask}
 				alt="DunTasks – Add task"
 				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-track-task" class="sm:-mx-5 sm:-my-2 m-0">
+		<Tabs.Content value="how-it-works-track-task" class="m-0 sm:-mx-5 sm:-my-2">
 			<img
 				src={TrackIt}
 				alt="DunTasks – Track task"
 				class="aspect-auto w-full duration-600 animate-in slide-in-from-bottom-60"
 			/>
 		</Tabs.Content>
-		<Tabs.Content value="how-it-works-get-it-done" class="sm:-mx-5 sm:-my-2 m-0">
+		<Tabs.Content value="how-it-works-get-it-done" class="m-0 sm:-mx-5 sm:-my-2">
 			<img
 				src={GetItDone}
 				alt="DunTasks – Get it done"
@@ -159,7 +155,7 @@
 		<img
 			src={KeyboardFriendly}
 			alt="DunTasks – Keyboard friendly"
-			class="m-0 sm:-mx-5 sm:-my-2 aspect-auto w-full duration-700 animate-in slide-in-from-bottom-60"
+			class="m-0 aspect-auto w-full duration-700 animate-in slide-in-from-bottom-60 sm:-mx-5 sm:-my-2"
 		/>
 	</div>
 </section>

@@ -6,3 +6,4 @@ export { default as CTA } from './cta.svelte';
 export { default as Gradient } from './gradient.svelte';
 export { default as Footer } from './footer.svelte';
 export { default as Kbd } from './kbd.svelte';
+export { default as DunTasksLogo } from './dun-tasks-logo.svelte';
