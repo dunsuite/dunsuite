@@ -51,6 +51,8 @@
 	</div>
 
 	<Button
+		id="duntasks-hero-button"
+		data-umami-event="DunTasks – Try for FREE Button"
 		href="/waitlist"
 		class="w-fit transition-all duration-500 animate-in slide-in-from-bottom-80"
 	>
@@ -207,9 +209,9 @@
 
 		<Button
 			id="duntasks-github-button"
+			data-umami-event="DunTasks – GitHub Button"
 			href="https://github.com/dunsuite/duntasks"
 			class="w-fit"
-			data-umami-event="DunTasks – GitHub Button"
 		>
 			Join the GitHub Community
 			<Kbd key="G" />
