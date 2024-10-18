@@ -31,7 +31,7 @@
 
 <SEO
 	title="DunTasks | Get Tasks Dun, Quicker"
-	description="Boost your productivity with DunTasks, the open-source task management tool designed to help you get things done efficiently."
+	description="Use DunTasks to get things done easily. It's a open source tool that helps you manage your tasks."
 	image="/tools/duntasks/ogimage.png"
 />
 
