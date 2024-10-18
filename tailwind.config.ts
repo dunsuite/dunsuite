@@ -59,6 +59,19 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: ['InterVariable', 'sans-serif']
+			},
+			// duration upto 2000ms
+			transitionDuration: {
+				'200': '200ms',
+				'400': '400ms',
+				'600': '600ms',
+				'800': '800ms',
+				'1000': '1000ms',
+				'1200': '1200ms',
+				'1400': '1400ms',
+				'1600': '1600ms',
+				'1800': '1800ms',
+				'2000': '2000ms'
 			}
 		}
 	},
