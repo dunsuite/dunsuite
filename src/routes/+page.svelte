@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button';
-	import { CTA, SEO, Kbd } from '$lib/components/ui/misc';
+	import { CTA, SEO, Kbd, DunTasksLogo } from '$lib/components/ui/misc';
 	import { onMount } from 'svelte';
 	import { toast } from 'svelte-sonner';
 
@@ -83,6 +83,11 @@
 			Designed with simplicity and a better UX in mind. No context switching, distractions or
 			complex workflows that ruin your productivity.
 		</p>
+
+		<a href="/duntasks" class="flex w-fit flex-col items-start justify-start">
+			<DunTasksLogo />
+			<p class="w-full text-center font-semibold text-title">DunTasks</p>
+		</a>
 	</div>
 </section>
 

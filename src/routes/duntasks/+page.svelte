@@ -39,7 +39,7 @@
 	id="duntasks-hero"
 	class="mb-12 flex w-full flex-col gap-6 duration-500 animate-in slide-in-from-bottom-60"
 >
-	<div class="mb-3 flex flex-col items-start justify-start gap-3">
+	<div class="mb-3 flex flex-col items-start justify-start gap-6">
 		<DunTasksLogo />
 
 		<h1

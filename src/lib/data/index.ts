@@ -14,6 +14,10 @@ export interface MenuItem {
 // Menu items
 export const menuItems: MenuItem[] = [
 	{
+		label: 'Tools',
+		url: '/tools'
+	},
+	{
 		label: 'Story',
 		url: '/story'
 	},

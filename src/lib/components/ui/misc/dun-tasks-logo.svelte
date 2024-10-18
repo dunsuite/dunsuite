@@ -1,5 +1,5 @@
 <div
-	class="-mx-5 flex size-44 items-start justify-start duration-200 animate-in slide-in-from-bottom-60 sm:-mx-5 sm:-my-2"
+	class="-mx-5 flex size-44 items-start justify-start duration-200 animate-in slide-in-from-bottom-60 sm:-mx-5 sm:-my-"
 >
 	<svg
 		width="202"
