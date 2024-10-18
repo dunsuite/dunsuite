@@ -84,9 +84,17 @@
 			complex workflows that ruin your productivity.
 		</p>
 
-		<a href="/duntasks" class="flex w-fit flex-col items-start justify-start">
+		<a
+			id="duntasks-tool"
+			href="/duntasks"
+			class="group flex w-fit flex-col items-start justify-start gap-5 duration-300 duration-800 animate-in slide-in-from-bottom-60 hover:scale-105"
+		>
 			<DunTasksLogo />
-			<p class="w-full text-center font-semibold text-title">DunTasks</p>
+			<p
+				class="w-full text-center font-semibold text-title group-hover:text-title/70 group-hover:underline group-hover:decoration-wavy"
+			>
+				DunTasks
+			</p>
 		</a>
 	</div>
 </section>
