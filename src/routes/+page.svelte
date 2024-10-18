@@ -127,6 +127,7 @@
 			href="https://github.com/dunsuite"
 			class="w-fit"
 			data-umami-event="Open to All – GitHub Button"
+			target="_blank"
 		>
 			View on GitHub
 			<Kbd key="G" />

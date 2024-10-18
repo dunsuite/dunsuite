@@ -210,10 +210,11 @@
 		<Button
 			id="duntasks-github-button"
 			data-umami-event="DunTasks – GitHub Button"
-			href="https://github.com/dunsuite/duntasks"
+			href="https://github.com/dunsuite"
+			target="_blank"
 			class="w-fit"
 		>
-			Join the GitHub Community
+			Follow on GitHub
 			<Kbd key="G" />
 		</Button>
 	</div>
