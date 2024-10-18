@@ -50,9 +50,13 @@
 		</h1>
 	</div>
 
-	<Button class="w-fit transition-all duration-500 animate-in slide-in-from-bottom-80"
-		>Try for FREE</Button
+	<Button
+		href="/waitlist"
+		class="w-fit transition-all duration-500 animate-in slide-in-from-bottom-80"
 	>
+		Try for FREE
+		<Kbd key="J" />
+	</Button>
 	<div
 		id="duntasks-hero-description"
 		class="mt-5 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500 duration-700 animate-in slide-in-from-bottom-60"
