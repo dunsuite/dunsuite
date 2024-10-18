@@ -20,16 +20,18 @@
 		</div>
 	</div>
 
-	<a
-		id="duntasks-tool"
-		href="/duntasks"
-		class="group flex w-fit flex-col items-start justify-start gap-3 underline-offset-4 duration-300 duration-800 animate-in slide-in-from-bottom-60 hover:scale-105"
-	>
-		<DunTasksLogo />
-		<p
-			class="w-full text-center font-semibold text-title group-hover:text-title/70 group-hover:underline group-hover:decoration-wavy"
+	<div>
+		<a
+			id="duntasks-tool"
+			href="/duntasks"
+			class="group flex w-fit flex-col items-start justify-start gap-3 underline-offset-4 duration-800 animate-in slide-in-from-bottom-60 hover:scale-105"
 		>
-			DunTasks
-		</p>
-	</a>
+			<DunTasksLogo />
+			<p
+				class="w-full text-center font-semibold text-title group-hover:text-title/70 group-hover:underline group-hover:decoration-wavy"
+			>
+				DunTasks
+			</p>
+		</a>
+	</div>
 </section>
