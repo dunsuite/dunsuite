@@ -5,6 +5,7 @@
 	export let title: string = SITE_TITLE;
 	export let subtitle: string = SITE_SUBTITLE;
 	export let description: string = SITE_DESCRIPTION;
+	export let image: string = '/ogimage.png';
 
 	$: currentUrl = $page.url.href;
 </script>
@@ -16,11 +17,11 @@
 	<meta property="og:description" content={description} />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={currentUrl} />
-	<meta property="og:image" content="/ogimage.png" />
-	<meta name="twitter:card" content="/ogimage.png" />
+	<meta property="og:image" content={image} />
+	<meta name="twitter:card" content={image} />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content="/ogimage.png" />
+	<meta name="twitter:image" content={image} />
 </svelte:head>
 
 <slot />

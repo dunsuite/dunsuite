@@ -1,7 +1,6 @@
 <script lang="ts">
 	import {
 		Home,
-		Logo,
 		AddTask,
 		CreateProject,
 		GetItDone,
@@ -13,7 +12,11 @@
 	import { CTA, SEO, Kbd, DunTasksLogo } from '$lib/components/ui/misc';
 </script>
 
-<SEO title="DunTasks | Get Tasks Dun, Quicker" />
+<SEO
+	title="DunTasks | Get Tasks Dun, Quicker"
+	description="Boost your productivity with DunTasks, the open-source task management tool designed to help you get things done efficiently."
+	image="/tools/duntasks/ogimage.png"
+/>
 
 <section
 	id="duntasks-hero"
@@ -147,9 +150,8 @@
 
 		<p>
 			With our <span class="text-title">pre-set shortcuts</span>, everything is just a few
-			keystrokes away. You can navigate, make changes, and manage tasks more efficiently—<span
-				class="text-title">saving you time and effort on every action.</span
-			>
+			keystrokes away. You can navigate, make changes, and manage tasks more efficiently
+			<span class="text-title">saving you time and effort on every action.</span>
 		</p>
 
 		<img
@@ -188,7 +190,7 @@
 			class="w-fit"
 			data-umami-event="DunTasks – GitHub Button"
 		>
-			Follow on GitHub
+			Join the GitHub Community
 			<Kbd key="G" />
 		</Button>
 	</div>
