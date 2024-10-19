@@ -2,21 +2,18 @@
 	import { Button } from '$lib/components/ui/button';
 	import { CTA, SEO, Kbd, DunTasksLogo } from '$lib/components/ui/misc';
 	import { onMount } from 'svelte';
-	import { toast } from 'svelte-sonner';
 
 	onMount(() => {
-		document.addEventListener('keydown', (e) => {
-			if (e.key === 'g') {
-				window.open('https://github.com/dunsuite', '_blank');
-			} else if (e.key === 'j') {
-				window.location.href = '/waitlist';
-			} else if (e.key === 'h') {
-				window.location.href = '/';
-				toast.success('You pressed H!... Redirecting you to the homepage.', {
-					duration: 3000
-				});
-			}
-		});
+		// Check if the current page is not the waitlist page
+		if (window.location.pathname !== '/waitlist') {
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'g') {
+					window.open('https://github.com/dunsuite', '_blank');
+				} else if (e.key === 'j') {
+					window.location.href = '/waitlist';
+				}
+			});
+		}
 	});
 </script>
 
