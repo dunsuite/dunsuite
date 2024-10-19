@@ -1,5 +1,5 @@
 const site = 'https://dunsuite.com';
-const pages: string[] = ['/', '/waitlist'];
+const pages: string[] = ['/', 'tools', 'story', 'waitlist', '/tools/duntasks'];
 
 export async function GET() {
 	const body = sitemap(pages);
