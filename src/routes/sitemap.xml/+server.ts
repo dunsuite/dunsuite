@@ -1,4 +1,4 @@
-const site = 'https://dunsuite.com';
+const site = 'https://www.dunsuite.com';
 const pages: string[] = ['/', 'tools', 'story', 'waitlist', '/tools/duntasks'];
 
 export async function GET() {
