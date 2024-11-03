@@ -7,3 +7,7 @@ export { default as Gradient } from './gradient.svelte';
 export { default as Footer } from './footer.svelte';
 export { default as Kbd } from './kbd.svelte';
 export { default as DunTasksLogo } from './dun-tasks-logo.svelte';
+export { default as ChangelogListCard } from './changelog-list-card.svelte';
+export { default as ChangelogType } from './changelog-type.svelte';
+export { default as ChangelogVersion } from './changelog-version.svelte';
+export { default as ChangelogList } from './changelog-list.svelte';

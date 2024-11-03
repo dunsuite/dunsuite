@@ -42,7 +42,8 @@
 		class="group"
 		data-umami-event="Header – Join Waitlist"
 	>
-		Join waitlist
+		<span class="sm:hidden">Join</span>
+		<span class="hidden sm:inline">Join waitlist</span>
 		<Kbd key="J" />
 	</Button>
 </header>

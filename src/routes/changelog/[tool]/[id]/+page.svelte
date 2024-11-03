@@ -1,0 +1,109 @@
+<script lang="ts">
+	import type { ChangelogResponse } from '$lib/types/generated-types';
+	import { SEO } from '$lib/components/ui/misc';
+	import { env } from '$env/dynamic/public';
+	import { ChangelogType, ChangelogVersion } from '$lib/components/ui/misc';
+	import { convertTimestampToDateString } from '$lib/utils/index';
+	import { cn } from '$lib/utils';
+	import DOMPurify from 'dompurify';
+	import { onMount } from 'svelte';
+
+	let { data }: { data: { changelog: ChangelogResponse } } = $props();
+	let sanitizedContent = $state<string>('');
+
+	onMount(() => {
+		sanitizedContent = DOMPurify.sanitize(data.changelog.content);
+	});
+
+	// Create a Svelte action for safely setting HTML content
+	function safeHtml(node: HTMLElement, content: string) {
+		const sanitizedContent = DOMPurify.sanitize(content, {
+			ALLOWED_TAGS: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'strong', 'table', 'tr', 'th', 'td', 'a', 'img'],
+			ALLOWED_ATTR: ['class']
+		});
+		
+		node.innerHTML = sanitizedContent;
+		
+		return {
+			update(newContent: string) {
+				node.innerHTML = DOMPurify.sanitize(newContent, {
+					ALLOWED_TAGS: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'strong', 'table', 'tr', 'th', 'td', 'a', 'img'],
+					ALLOWED_ATTR: ['class']
+				});
+			}
+		};
+	}
+</script>
+
+<SEO
+	title={`${data.changelog.title} – ${data.changelog.tool} Changelog`}
+	description={data.changelog.description}
+/>
+
+<section id="changelog" class="flex min-h-screen w-full flex-col gap-4">
+	<h1
+		id="hero-title"
+		class="mb-4 mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+	>
+		{data.changelog.title}
+	</h1>
+
+	<div
+		class="flex flex-row items-center justify-start gap-2 duration-500 animate-in slide-in-from-bottom-60"
+	>
+		<ChangelogType tag={data.changelog.tag} />
+		<ChangelogVersion version={data.changelog.version} />
+		<p class="text-base font-medium text-gray-500">
+			{convertTimestampToDateString(data.changelog.created)}
+		</p>
+	</div>
+
+	<img
+		src={`${env.PUBLIC_FILE_URL}/${data.changelog.collectionId}/${data.changelog.id}/${data.changelog.cover}`}
+		alt={data.changelog.title}
+		class="my-4 aspect-auto w-full rounded-3xl border-2 border-white shadow-xl duration-600 animate-in slide-in-from-bottom-60"
+	/>
+
+	<div class="text-xl font-medium text-gray-600 duration-700 animate-in slide-in-from-bottom-60">
+		<span class="text-xl font-medium text-black">tl;dr:</span>
+		{data.changelog.description}
+	</div>
+
+	<div
+		class={cn(
+			' prose prose-lg flex flex-col gap-4 duration-800 animate-in slide-in-from-bottom-96',
+			'prose-p:text-xl prose-p:font-medium',
+			'prose-a:text-xl prose-a:font-medium prose-a:underline',
+			'prose-img:rounded-xl prose-img:border-2 prose-img:border-white',
+			'prose-h1:text-xl prose-h1:font-medium',
+			'prose-h2:text-xl prose-h2:font-medium',
+			'prose-h3:text-xl prose-h3:font-medium',
+			'prose-h4:text-xl prose-h4:font-medium',
+			'prose-h5:text-xl prose-h5:font-medium',
+			'prose-h6:text-xl prose-h6:font-medium',
+			'prose-ul:text-xl prose-ul:font-medium',
+			'prose-ol:text-xl prose-ol:font-medium',
+			'prose-li:text-xl prose-li:font-medium',
+			'prose-table:text-xl prose-table:font-medium',
+			'prose-th:text-xl prose-th:font-medium',
+			'prose-td:text-xl prose-td:font-medium',
+			'prose-strong:text-xl prose-strong:font-medium',
+			'&>a:text-xl &>a:font-medium &>a:underline',
+			'&>img:rounded-xl &>img:border-2 &>img:border-white',
+			'&>h1:text-xl &>h1:font-medium',
+			'&>h2:text-xl &>h2:font-medium',
+			'&>h3:text-xl &>h3:font-medium',
+			'&>h4:text-xl &>h4:font-medium',
+			'&>h5:text-xl &>h5:font-medium',
+			'&>h6:text-xl &>h6:font-medium',
+			'&>ul:text-xl &>ul:font-medium',
+			'&>ol:text-xl &>ol:font-medium',
+			'&>li:text-xl &>li:font-medium',
+			'&>table:text-xl &>table:font-medium',
+			'&>th:text-xl &>th:font-medium',
+			'&>td:text-xl &>td:font-medium',
+			'&>strong:text-xl &>strong:font-medium'
+		)}
+		use:safeHtml={sanitizedContent}
+	></div>
+</section>
