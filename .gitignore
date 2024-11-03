@@ -29,3 +29,6 @@ pocketbase/pocketbase
 pb_data/         
 # Include only migrations
 !/pb_migrations/  
+
+# .github
+.github

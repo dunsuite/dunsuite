@@ -1,6 +1,15 @@
-# create-svelte
+# DunTasks – Get things done!, Quicker.
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Use DunTasks to get things done easily. It's an open-source tool that helps you manage your tasks efficiently.
+
+## 🚀 Quick Start
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
 
 ## Creating a project
 
