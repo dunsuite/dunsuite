@@ -5,34 +5,8 @@
 	import { ChangelogType, ChangelogVersion } from '$lib/components/ui/misc';
 	import { convertTimestampToDateString } from '$lib/utils/index';
 	import { cn } from '$lib/utils';
-	import DOMPurify from 'dompurify';
-	import { onMount } from 'svelte';
 
 	let { data }: { data: { changelog: ChangelogResponse } } = $props();
-	let sanitizedContent = $state<string>('');
-
-	onMount(() => {
-		sanitizedContent = DOMPurify.sanitize(data.changelog.content);
-	});
-
-	// Create a Svelte action for safely setting HTML content
-	function safeHtml(node: HTMLElement, content: string) {
-		const sanitizedContent = DOMPurify.sanitize(content, {
-			ALLOWED_TAGS: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'strong', 'table', 'tr', 'th', 'td', 'a', 'img'],
-			ALLOWED_ATTR: ['class']
-		});
-		
-		node.innerHTML = sanitizedContent;
-		
-		return {
-			update(newContent: string) {
-				node.innerHTML = DOMPurify.sanitize(newContent, {
-					ALLOWED_TAGS: ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'ul', 'ol', 'li', 'strong', 'table', 'tr', 'th', 'td', 'a', 'img'],
-					ALLOWED_ATTR: ['class']
-				});
-			}
-		};
-	}
 </script>
 
 <SEO
@@ -104,6 +78,11 @@
 			'&>td:text-xl &>td:font-medium',
 			'&>strong:text-xl &>strong:font-medium'
 		)}
-		use:safeHtml={sanitizedContent}
-	></div>
+	>
+		{#if data.changelog.content}
+			{@html data.changelog.content}
+		{:else}
+			<p class="text-xl font-medium text-gray-600">No content available.</p>
+		{/if}
+	</div>
 </section>

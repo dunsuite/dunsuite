@@ -63,11 +63,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@types/dompurify": "^3.0.5",
 		"@upstash/ratelimit": "^2.0.3",
 		"bits-ui": "^0.21.16",
 		"clsx": "^2.1.1",
-		"dompurify": "^3.1.7",
 		"mode-watcher": "^0.4.1",
 		"pocketbase": "^0.21.5",
 		"svelte-sonner": "^0.3.28",
