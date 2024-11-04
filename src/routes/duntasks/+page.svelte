@@ -82,7 +82,10 @@
 	id="duntasks-first-look"
 	class="mb-12 flex w-full flex-col gap-6 duration-1000 animate-in slide-in-from-bottom-60"
 >
-	<h2 id="duntasks-first-look-title" class="text-2xl font-medium text-title">
+	<h2
+		id="duntasks-first-look-title"
+		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
+	>
 		Your time spent on actually doing
 	</h2>
 
@@ -113,7 +116,10 @@
 	id="duntasks-how-it-works"
 	class="mb-12 flex w-full flex-col gap-6 duration-1200 animate-in slide-in-from-bottom-60"
 >
-	<h2 id="duntasks-how-it-works-title" class="text-2xl font-medium text-title">
+	<h2
+		id="duntasks-how-it-works-title"
+		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
+	>
 		With DunTasks, All you gotta do is,
 	</h2>
 
@@ -159,7 +165,10 @@
 	id="duntasks-keyboard-friendly"
 	class="mb-12 flex w-full flex-col gap-6 duration-1400 animate-in slide-in-from-bottom-60"
 >
-	<h2 id="duntasks-keyboard-friendly-title" class="text-2xl font-medium text-title">
+	<h2
+		id="duntasks-keyboard-friendly-title"
+		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
+	>
 		Keyboard friendly
 	</h2>
 
@@ -189,7 +198,10 @@
 	id="duntasks-built-with-community"
 	class="mb-12 flex w-full flex-col gap-6 duration-1600 animate-in slide-in-from-bottom-60"
 >
-	<h2 id="duntasks-built-with-community-title" class="text-2xl font-medium text-title">
+	<h2
+		id="duntasks-built-with-community-title"
+		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
+	>
 		Built with community support
 	</h2>
 
