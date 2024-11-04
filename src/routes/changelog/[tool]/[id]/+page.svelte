@@ -17,7 +17,7 @@
 <section id="changelog" class="flex min-h-screen w-full flex-col gap-4">
 	<h1
 		id="hero-title"
-		class="mb-4 mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+		class="mb-4 mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8 text-balance"
 	>
 		{data.changelog.title}
 	</h1>
