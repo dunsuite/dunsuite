@@ -48,7 +48,7 @@
 			'prose prose-lg flex flex-col duration-800 animate-in slide-in-from-bottom-96',
 			'prose-p:text-xl prose-p:font-medium',
 			'prose-a:text-xl prose-a:font-medium prose-a:underline',
-			'prose-img:rounded-3xl prose-img:border-2 prose-img:border-white',
+			'prose-img:rounded-3xl prose-img:border-2 prose-img:border-white ',
 			'prose-h1:font-medium',
 			'prose-h2:font-medium',
 			'prose-h3:font-medium',
@@ -73,7 +73,8 @@
 			'prose-figure:text-xl prose-figure:font-medium',
 			'prose-pre:text-xl prose-pre:font-medium',
 			'prose-hr:text-xl prose-hr:font-medium',
-			'prose-custom:text-xl prose-custom:font-medium'
+			'prose-custom:text-xl prose-custom:font-medium',
+			'prose-ol:leading-relaxed prose-ul:leading-relaxed prose-li:leading-relaxed'
 		)}
 	>
 		{#if data.changelog.content}
