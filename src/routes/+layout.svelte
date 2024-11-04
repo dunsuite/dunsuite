@@ -1,6 +1,6 @@
 <script>
 	import '../app.css';
-	import { Header, Gradient, Footer } from '$lib/components/ui/misc';
+	import { Header, Gradient, Footer, Size } from '$lib/components/ui/misc';
 	import { Toaster } from '$lib/components/ui/sonner';
 	import { dev } from '$app/environment';
 	import { env } from '$env/dynamic/public';
@@ -37,6 +37,7 @@
 <div
 	class="mx-auto my-2 flex min-h-screen w-full max-w-2xl flex-col items-center justify-start p-4 font-sans antialiased"
 >
+	<Size />
 	<Gradient />
 	<Header />
 	<slot></slot>

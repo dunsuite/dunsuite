@@ -11,3 +11,4 @@ export { default as ChangelogListCard } from './changelog-list-card.svelte';
 export { default as ChangelogType } from './changelog-type.svelte';
 export { default as ChangelogVersion } from './changelog-version.svelte';
 export { default as ChangelogList } from './changelog-list.svelte';
+export { default as Size } from './size.svelte';
