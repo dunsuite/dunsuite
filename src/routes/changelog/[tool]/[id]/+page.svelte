@@ -58,6 +58,7 @@
 			'prose-ul:text-xl prose-ul:font-medium',
 			'prose-ol:text-xl prose-ol:font-medium',
 			'prose-li:text-xl prose-li:font-medium',
+			'prose-li > prose-li > prose-p:my-0 prose-p:leading-tight',
 			'prose-table:text-xl prose-table:font-medium',
 			'prose-th:text-xl prose-th:font-medium',
 			'prose-td:text-xl prose-td:font-medium',
@@ -73,8 +74,7 @@
 			'prose-figure:text-xl prose-figure:font-medium',
 			'prose-pre:text-xl prose-pre:font-medium',
 			'prose-hr:text-xl prose-hr:font-medium',
-			'prose-custom:text-xl prose-custom:font-medium',
-			'prose-ol:space-y-2 prose-ul:space-y-2 prose-li:space-y-2'
+			'prose-custom:text-xl prose-custom:font-medium'
 		)}
 	>
 		{#if data.changelog.content}
