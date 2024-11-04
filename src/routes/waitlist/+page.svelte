@@ -33,7 +33,7 @@
 	{#if !showSocials}
 		<h1
 			id="waitlist-title"
-			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8 text-balance"
 		>
 			Ready to simplify your workflow?
 		</h1>
@@ -104,7 +104,7 @@
 					<span
 						class="ml-2 hidden rounded-md border border-gray-700 bg-gray-800 px-1 py-0.5 text-xs text-gray-500 transition-all duration-150 group-hover:border-gray-500 group-hover:bg-gray-700 group-hover:text-gray-300 sm:block"
 					>
-						↵
+							↵
 					</span>
 				{/if}
 			</Button>
@@ -112,7 +112,7 @@
 	{:else}
 		<h1
 			id="follow-us-title"
-			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+			class="mt-4 w-full pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8 text-balance"
 		>
 			You’re on the list! follow us for updates
 		</h1>

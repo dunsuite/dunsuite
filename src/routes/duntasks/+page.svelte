@@ -44,7 +44,7 @@
 
 		<h1
 			id="duntasks-hero-title"
-			class="w-full text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:tracking-[-4px]"
+			class="w-full text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:tracking-[-4px] text-balance"
 		>
 			DunTasks <br /> <span class="text-gray-600">get tasks dun, quicker</span>
 		</h1>
