@@ -62,21 +62,18 @@
 			'prose-th:text-xl prose-th:font-medium',
 			'prose-td:text-xl prose-td:font-medium',
 			'prose-strong:text-xl prose-strong:font-medium',
-			'&>a:text-xl &>a:font-medium &>a:underline',
-			'&>img:rounded-xl &>img:border-2 &>img:border-white',
-			'&>h1:text-xl &>h1:font-medium',
-			'&>h2:text-xl &>h2:font-medium',
-			'&>h3:text-xl &>h3:font-medium',
-			'&>h4:text-xl &>h4:font-medium',
-			'&>h5:text-xl &>h5:font-medium',
-			'&>h6:text-xl &>h6:font-medium',
-			'&>ul:text-xl &>ul:font-medium',
-			'&>ol:text-xl &>ol:font-medium',
-			'&>li:text-xl &>li:font-medium',
-			'&>table:text-xl &>table:font-medium',
-			'&>th:text-xl &>th:font-medium',
-			'&>td:text-xl &>td:font-medium',
-			'&>strong:text-xl &>strong:font-medium'
+			'prose-em:text-xl prose-em:font-medium',
+			'prose-code:text-xl prose-code:font-medium',
+			'prose-del:text-xl prose-del:font-medium',
+			'prose-a:text-xl prose-a:font-medium prose-a:underline',
+			'prose-blockquote:text-xl prose-blockquote:font-medium',
+			'prose-iframe:text-xl prose-iframe:font-medium',
+			'prose-img:text-xl prose-img:font-medium',
+			'prose-video:text-xl prose-video:font-medium',
+			'prose-figure:text-xl prose-figure:font-medium',
+			'prose-pre:text-xl prose-pre:font-medium',
+			'prose-hr:text-xl prose-hr:font-medium',
+			'prose-custom:text-xl prose-custom:font-medium'
 		)}
 	>
 		{#if data.changelog.content}
