@@ -17,7 +17,7 @@
 <section id="changelog" class="flex min-h-screen w-full flex-col gap-4">
 	<h1
 		id="hero-title"
-		class="mb-4 mt-4 w-full text-balance pt-3 text-start text-[min(12vw,92px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
+		class="mb-4 mt-4 w-full text-balance pt-3 text-start text-[min(12vw,64px)] font-medium leading-[0.9] tracking-[-2px] text-title duration-500 animate-in slide-in-from-bottom-60 sm:pt-12 sm:tracking-[-4px] md:pt-8"
 	>
 		{data.changelog.title}
 	</h1>
@@ -74,7 +74,7 @@
 			'prose-pre:text-xl prose-pre:font-medium',
 			'prose-hr:text-xl prose-hr:font-medium',
 			'prose-custom:text-xl prose-custom:font-medium',
-			'prose-ol:leading-relaxed prose-ul:leading-relaxed prose-li:leading-relaxed'
+			'prose-ol:space-y-2 prose-ul:space-y-2 prose-li:space-y-2'
 		)}
 	>
 		{#if data.changelog.content}
