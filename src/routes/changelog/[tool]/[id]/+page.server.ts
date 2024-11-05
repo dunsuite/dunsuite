@@ -6,6 +6,5 @@ export const load = (async ({ params, locals }) => {
 		filter: `status = "published"`
 	});
 
-	console.log('changelog', changelog);
 	return { changelog };
 }) satisfies PageServerLoad;
