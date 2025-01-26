@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { CTA, SEO } from '$lib/components/ui/misc';
-	import Ask from './sections/ask.svelte';
-	import Hero from './sections/hero.svelte';
-	import MarketOpportunity from './sections/market-opportunity.svelte';
-	import Phases from './sections/phases.svelte';
-	import Problem from './sections/problem.svelte';
-	import Solution from './sections/solution.svelte';
-	import Traction from './sections/traction.svelte';
+	import SEO from '$lib/components/ui/misc/seo.svelte';
+	import Ask from '$lib/components/sections/ask.svelte';
+	import Hero from '$lib/components/sections/hero.svelte';
+	import MarketOpportunity from '$lib/components/sections/market-opportunity.svelte';
+	import Phases from '$lib/components/sections/phases.svelte';
+	import Problem from '$lib/components/sections/problem.svelte';
+	import Solution from '$lib/components/sections/solution.svelte';
+	import Traction from '$lib/components/sections/traction.svelte';
 </script>
 
 <SEO title="Pitch Deck | Dun" />
