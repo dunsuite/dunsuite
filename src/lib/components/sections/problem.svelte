@@ -51,10 +51,10 @@
         {#each problems as problem, index}
             <ExplainerCard 
                 caption={problem.problem}
-                images={problem.images}
-                {index}
-                {activeIndex}
-                {activeIndexHandle}
+                images={problem.images as { src: string; description: string }[]}
+                index={index}
+                activeIndex={activeIndex}
+                activeIndexHandle={activeIndexHandle}
             />
         {/each}
     </div>
