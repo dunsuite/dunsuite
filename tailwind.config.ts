@@ -72,6 +72,10 @@ const config: Config = {
 				'1600': '1600ms',
 				'1800': '1800ms',
 				'2000': '2000ms'
+			},
+			boxShadow: {
+				mild: '0 0 12px 0 rgba(0, 0, 0, 0.04)',
+				subtle: '0 0 24px 0 rgba(0, 0, 0, 0.08)',
 			}
 		}
 	},

@@ -14,5 +14,5 @@
 		>
 	</div>
 
-	<p id="footer-copyright">&copy; 2024</p>
+	<p id="footer-copyright">&copy; 2025</p>
 </footer>
