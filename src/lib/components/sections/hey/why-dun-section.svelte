@@ -26,7 +26,7 @@
         </li>
 
         <li>
-            You might say, “But there's already a tool for that”, Sure. There are tools for tasks, chats. But they don't talk to each other or <span class="font-medium text-black">feel like they belong together</span> 
+            <span class="font-medium text-black">Built by a design-led team,</span> so every tool feels as good as it functions
         </li>
 
         <li>
