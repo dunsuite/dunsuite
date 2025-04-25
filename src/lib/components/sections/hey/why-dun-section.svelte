@@ -13,42 +13,38 @@
         Why you should try dun
 	</h2>
 
-    <div
-		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500"
+    <ul
+		class="flex flex-col gap-3 text-xl font-medium leading-relaxed text-gray-500 list-disc list-outside pl-6 marker:mr-6"
 	>
 
-        <p>
-            Most tools try to do everything. <span class="font-medium text-black">We'd rather do one thing well</span>
-        </p>
+        <li>
+            Most business tools try to do everything. <span class="font-medium text-black">We focus on doing one thing well</span>
+        </li>
 
-        <p>
-            Dun exists because <span class="font-medium text-black">modern work tools are overloaded.</span> Too many features, too much noise, and no real flow. You end up <span class="font-medium text-black">switching tabs, losing context, and working around</span> the tool instead of with it
-        </p>
+        <li>
+            Unlike tools that overwhelm you with complexity,<span class="font-medium text-black">Dun keeps things simple,</span>letting you focus on what matters <span class="font-medium text-black">without distractions </span>
+        </li>
 
-        <p>
+        <li>
             You might say, “But there's already a tool for that”, Sure. There are tools for tasks, chats. But they don't talk to each other or <span class="font-medium text-black">feel like they belong together</span> 
-        </p>
+        </li>
 
-        <p>
-            <span class="font-medium text-black">Clunky interfaces, sacrificed UX, no local-first access, and plenty of context switching.</span> That's where Dun draws the line
-        </p>
+        <li>
+            Every tool is <span class="font-medium text-black">open-source and shaped with community</span> feedback
+        </li>
 
-        <p>
-            <span class="font-medium text-black">Each Dun tool is focused.</span> DunTasks, DunChat, DunFiles all designed to do one thing exceptionally well. <span class="font-medium text-black">But the real magic? They flow together!</span>
-        </p>
+        <li>
+            <span class="font-medium text-black">Each Dun tool is focused.No clutter, no bloat,</span> just calm tools that help you get things done
+        </li>
 
-        <p>
-            <span class="font-medium text-black">A task in DunTasks can be discussed in DunChat. A chat can be referred in a task for context.</span> You always have the full picture without switching tabs
-        </p>
+        <li>
+            Built by a team who's tired of context-switching too
+        </li>
 
-        <p>
-            <span class="font-medium text-black">And yes, there's AI.</span> Not the “write a summary" kind. But the one that actually helps, <span class="font-medium text-black">quick actions, smart suggestions, do the boring stuff</span> like “prepare project report”
-        </p>
+        <li>
+           AI where its needed, not as a feature, but as <span class="font-medium text-black">a quiet helper that speeds things up</span>
+        </li>
 
-        <p>
-            It speeds you up, not slows you down. So the focus stays where it should: on getting things Dun!
-        </p>
-
-    </div>
+    </ul>
 
 </section>

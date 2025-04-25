@@ -22,7 +22,7 @@
         Follow for every update, right as it drops
 	</h2>
 
-    <ul class="flex flex-wrap gap-2">
+    <ul class="grid grid-cols-3 lg:grid-cols-6 gap-2">
         {#each socialLinks as link}
             <li>
                 <a
@@ -30,7 +30,7 @@
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="group flex size-24 items-center justify-center rounded-3xl bg-white p-8 duration-700 animate-in slide-in-from-bottom-60"
+                    class="group flex w-full h-24 items-center justify-center rounded-3xl bg-white p-8 duration-700 animate-in slide-in-from-bottom-60"
                     data-umami-event={`Waitlist – ${link.name}`}
                 >
                     <img
