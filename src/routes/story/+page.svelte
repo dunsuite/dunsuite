@@ -35,17 +35,9 @@
 		<p>So, we decided, "Okay, we'll do it ourselves" [Of course, in Thanos' voice]</p>
 		<img src="/story/thanos.gif" alt="Thanos" class="w-full" />
 		<p>
-			And here we are! <a
-				href="https://thisux.com"
-				target="_blank"
-				class="text-title decoration-wavy underline-offset-4 hover:underline"
-				>ThisUX – Design led product studio</a
-			> with big dreams, eager to make things simpler, better, and more enjoyable, one tool at a time.
+			And here we are, with big dreams, eager to make things simpler, better, and more enjoyable, one tool at a time.
 		</p>
-		<p>
-			And the exciting part is, we can all do it together. We're developing these tools as
-			open-source, so that those who faced the same challenges can help improve it for all of us.
-		</p>
+
 		<p>Our motto is simple. And always will be.</p>
 		<p class="text-black">Open app --> finish the task --> get back to your life!, that's it!</p>
 		<p>Come join us—we're just beginning!</p>

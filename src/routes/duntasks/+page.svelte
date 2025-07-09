@@ -194,42 +194,5 @@
 	</div>
 </section>
 
-<section
-	id="duntasks-built-with-community"
-	class="mb-12 flex w-full flex-col gap-6 duration-1600 animate-in slide-in-from-bottom-60"
->
-	<h2
-		id="duntasks-built-with-community-title"
-		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
-	>
-		Built with community support
-	</h2>
-
-	<div
-		class="duration-900 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500 animate-in slide-in-from-bottom-60"
-	>
-		<p>
-			<span class="text-title">DunTasks</span> isn’t another one of those
-			<span class="text-title">"we're gonna build it and then see what people think"</span>
-			projects.
-		</p>
-
-		<p>
-			We're building DunTasks because we use it and because we think it can be better. We're
-			building it <span class="text-title">for the community––by the community.</span>
-		</p>
-
-		<Button
-			id="duntasks-github-button"
-			data-umami-event="DunTasks – GitHub Button"
-			href="https://github.com/dunsuite"
-			target="_blank"
-			class="w-fit"
-		>
-			Follow on GitHub
-			<Kbd key="G" />
-		</Button>
-	</div>
-</section>
 
 <CTA />

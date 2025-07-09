@@ -17,7 +17,7 @@
 	});
 </script>
 
-<SEO title="Dun – The Simple, Open-Source Business Tool Suite" />
+<SEO title="Dun – The Simple and Focused Business Tool Suite" />
 
 <section id="hero" class="mb-8 flex w-full flex-col gap-6">
 	<h1
@@ -70,7 +70,7 @@
 		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600"
 	>
 		<p>
-			We're building a suite of focused, open––source tools where each tool does only one job but
+			We're building a suite of simple & focused business tools where each tool does only one job but
 			exceptionally well.
 		</p>
 
@@ -95,41 +95,4 @@
 			</p>
 		</a>
 	</div>
-</section>
-
-<section
-	id="open-to-all"
-	class="mb-8 flex w-full flex-col gap-6 duration-1000 animate-in slide-in-from-bottom-60"
->
-	<h2
-		id="open-to-all-title"
-		class="w-full text-start text-4xl font-medium leading-tight tracking-tight"
-	>
-		Driven by You, Open to All.
-	</h2>
-
-	<div
-		id="open-to-all-description"
-		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600"
-	>
-		<p>
-			Dun isn’t just for you—it’s by you. As open-source tools, Dun products are built with
-			community feedback at the forefront.
-		</p>
-
-		<p>You can tweak, improve, and contribute, making the tools truly yours.</p>
-
-		<Button
-			id="open-to-all-github-button"
-			href="https://github.com/dunsuite"
-			class="w-fit"
-			data-umami-event="Open to All – GitHub Button"
-			target="_blank"
-		>
-			View on GitHub
-			<Kbd key="G" />
-		</Button>
-	</div>
-
-	<CTA />
 </section>

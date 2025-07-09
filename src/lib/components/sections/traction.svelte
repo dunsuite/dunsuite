@@ -6,7 +6,6 @@
 
     const tractions = [
         { icon: WaitlistIcon, label: "680+ waitlist members" },
-        { icon: CommunityIcon, label: "130+ community members" },
         { icon: GlobeIcon, label: "120+ countries reached" },
     ]
     
@@ -22,16 +21,6 @@
 	>
         Curious how we’re doing so far?
 	</h2>
-
-    <div
-		class="flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-500"
-	>
-
-        <p>
-            We’ve already got early adopters, and a community of open-source enthusiasts
-        </p>
-
-    </div>
 
     <div class="grid w-full grid-cols-1 lg:grid-cols-3 gap-2">
         {#each tractions as traction}

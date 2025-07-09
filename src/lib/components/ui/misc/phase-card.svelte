@@ -20,7 +20,7 @@
 	</span>
 
 	<div class="flex w-full flex-col gap-1">
-		<p class="text-md m-0 w-full font-medium">
+		<p class="text-md m-0 w-full font-medium text-left">
 			{label}
 		</p>
 

@@ -13,7 +13,7 @@
 		class="mt-5 flex flex-col gap-6 text-xl font-medium leading-relaxed text-gray-600"
 	>
 		<p>
-			We’re rethinking work tools, making them simpler, distraction-free, and open-source. Let’s walk you through the story.
+			We’re rethinking work tools, making them simpler and distraction-free. Let’s walk you through the story.
 		</p>
 	</div>
 </section>

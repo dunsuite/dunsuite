@@ -3,10 +3,8 @@
 	import clsx from "clsx";
 
     const socialLinks = [
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
 		{ name: 'X', url: 'https://x.com/dunsuite', icon: x },
-		{ name: 'GitHub', url: 'https://github.com/dunsuite', icon: github },
-		{ name: 'Discord', url: 'https://discord.gg/kxF3Snje', icon: discord },
-		{ name: 'LinkedIn', url: 'https://www.linkedin.com/company/dunsuite/', icon: linkedin },
 		{ name: 'Instagram', url: 'https://www.instagram.com/dunsuite/', icon: instagram }
 	];
 </script>

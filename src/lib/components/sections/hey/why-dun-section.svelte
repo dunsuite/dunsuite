@@ -30,10 +30,6 @@
         </li>
 
         <li>
-            Every tool is <span class="font-medium text-black">open-source and shaped with community</span> feedback
-        </li>
-
-        <li>
             <span class="font-medium text-black">Each Dun tool is focused.No clutter, no bloat,</span> just calm tools that help you get things done
         </li>
 
