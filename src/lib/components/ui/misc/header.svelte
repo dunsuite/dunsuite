@@ -37,12 +37,14 @@
 
 	<Button
 		id="waitlist-button"
-		href="/waitlist"
+		href="https://duntasks.com"
+		target="_blank"
 		class="group"
 		data-umami-event="Header – Join Waitlist"
+		
 	>
 		<span class="sm:hidden">Join</span>
-		<span class="hidden sm:inline">Join waitlist</span>
-		<Kbd key="J" />
+		<span class="hidden sm:inline">Try DunTasks</span>
+		<Kbd key="T" />
 	</Button>
 </header>
