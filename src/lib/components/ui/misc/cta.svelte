@@ -18,11 +18,12 @@
 
 	<Button
 		id="open-to-all-cta-button"
-		href="/waitlist"
+		href="https://duntasks.com"
+		target="_blank"
 		class="w-fit"
 		data-umami-event="Open to All – CTA Button"
 	>
-		Join waitlist
-		<Kbd key="J" />
+		Try DunTasks
+		<Kbd key="T" />
 	</Button>
 </section>

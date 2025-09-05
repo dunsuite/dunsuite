@@ -23,7 +23,8 @@
 	<div>
 		<a
 			id="duntasks-tool"
-			href="/duntasks"
+			href="https://duntasks.com"
+			target="_blank"
 			class="group flex w-fit flex-col items-start justify-start gap-1 underline-offset-4 duration-800 animate-in slide-in-from-bottom-60 hover:scale-105"
 			data-umami-event="Tools – DunTasks Tool"
 		>
